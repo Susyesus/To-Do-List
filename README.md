@@ -4,23 +4,21 @@ A simple To-Do List web application built with Django. Users can create an accou
 
 ## 🚀 Features
 
-User authentication (signup, login, logout)
+- User authentication (signup, login, logout)
 
-Create, edit, delete tasks
+- Create, edit, delete tasks
 
-Mark tasks as complete/incomplete
+- Mark tasks as complete/incomplete
 
-Task due dates and priority (optional)
-
-Personal task lists (each user sees only their own tasks)
+- Personal task lists (each user sees only their own tasks)
 
 ## 🛠 Tech Stack
 
-Backend: Python, Django
+- Backend: Python, Django
 
-Frontend: HTML, CSS, Bootstrap (or Tailwind, if you prefer)
+- Frontend: HTML, CSS, Javascript
 
-Database: SQLite (default, can be swapped for PostgreSQL/MySQL)
+- Database: SQLite (default, can be swapped for PostgreSQL/MySQL)
 
 ## ⚙️ Installation & Setup
 
@@ -58,6 +56,7 @@ python manage.py runserver
 ```
 
 ### Visit http://127.0.0.1:8000/ in your browser.
+
 
 
 
