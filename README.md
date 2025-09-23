@@ -28,7 +28,7 @@ Database: SQLite (default, can be swapped for PostgreSQL/MySQL)
 
 Clone the repository
 
-git clone https://github.com/yourusername/django-todo-list.git
+git clone https://github.com/Susyesus/To-Do-List.git
 cd django-todo-list
 
 
@@ -60,4 +60,5 @@ python manage.py runserver
 
 
 Visit http://127.0.0.1:8000/ in your browser.
+
 
