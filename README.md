@@ -1,4 +1,6 @@
-#📝 Django To-Do List App
+# To-Do-List
+
+📝 Django To-Do List App
 
 A simple To-Do List web application built with Django. Users can create an account, add tasks, mark them as complete, and manage their daily activities.
 
@@ -58,3 +60,4 @@ python manage.py runserver
 
 
 Visit http://127.0.0.1:8000/ in your browser.
+
