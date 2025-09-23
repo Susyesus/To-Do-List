@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}TO-DO LIST{% endblock %}</title>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/users/login/">Login</a> |
+    <a href="/users/signup/">Signup</a> |
+    <a href="/users/logout/">Logout</a>
+  </nav>
+  <hr>
+
+  {% block content %}{% endblock %}
+</body>
+</html>
