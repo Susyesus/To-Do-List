@@ -5,18 +5,15 @@
   <meta charset="UTF-8">
   <title>{% block title %}TO-DO LIST{% endblock %}</title>
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block extra_css %}{% endblock %}
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/users/login/">Login</a> |
-    <a href="/users/signup/">Signup</a> |
-    <a href="/users/logout/">Logout</a>
-  </nav>
+
   <hr>
 
   {% block content %}{% endblock %}
 
-  <!-- <script src="{% static 'js/script.js' %}"></script> -->
+  <script src="{% static 'js/script.js' %}"></script>
+  {% block extra_js %}{% endblock %}
 </body>
 </html>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}My Tasks{% endblock %}
+
+{% block content %}
+<div class="task-wrapper">
+  <div class="task-card">
+    <div class="task-header">
+      <h2>My Tasks</h2>
+      <a href="{% url 'logout' %}" class="btn logout-btn">Logout</a>
+    </div>
+
+    <a href="{% url 'add_task' %}" class="btn add-btn">+ Add Task</a>
+
+    <ul class="task-list">
+      {% for task in tasks %}
+        <li class="task-item {% if task.completed %}completed{% endif %}">
+          <span>{{ task.title }}</span>
+          <div class="task-actions">
+            {% if not task.completed %}
+              <a href="{% url 'complete_task' task.id %}" class="btn small-btn complete-btn">Complete</a>
+            {% endif %}
+            <a href="{% url 'delete_task' task.id %}" class="btn small-btn delete-btn">Delete</a>
+          </div>
+        </li>
+      {% empty %}
+        <p class="no-tasks">No tasks yet. Add one above!</p>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/tasks.css' %}">
+{% endblock %}

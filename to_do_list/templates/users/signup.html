@@ -1,12 +1,31 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Signup{% endblock %}
 
 {% block content %}
-<h2>Signup</h2>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Signup</button>
-</form>
+<div class="form-wrapper">
+  <div class="signup-card">
+    <h2>Create Your Account</h2>
+    <p class="subtitle">Join us today and manage your tasks easily!</p>
+
+    <form method="POST" class="styled-form">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <p class="redirect-text">
+      Already have an account? <a href="/users/login/">Login here</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/signup.js' %}"></script>
 {% endblock %}

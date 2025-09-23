@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.signup-card {
+    width: 420px;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.signup-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 26px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.styled-form p {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.styled-form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.styled-form input:focus {
+    border: 1px solid #2575fc;
+    outline: none;
+    box-shadow: 0 0 6px rgba(37, 117, 252, 0.3);
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: #2575fc;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background: #1a5ed9;
+    transform: translateY(-2px);
+}
+
+.redirect-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.redirect-text a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirect-text a:hover {
+    text-decoration: underline;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
